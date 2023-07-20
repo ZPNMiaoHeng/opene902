@@ -180,3 +180,5 @@ help:
 	@echo "    make runcase CASE=dhry DUMP=on  : run case 'dhry' with dump "; 
 
 
+wave:
+	gtkwave ./work/test.fst
