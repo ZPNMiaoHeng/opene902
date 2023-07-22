@@ -176,8 +176,8 @@ openE902 x_e902 (
   .pad_biu_hrdata       (pad_biu_hrdata      ),
   .pad_biu_hready       (pad_biu_hready      ),
   .pad_biu_hresp        (pad_biu_hresp_0     ),
-  .pad_bmu_iahbl_base   (12'h000             ),
-  .pad_bmu_iahbl_mask   (12'he00             ),
+  .pad_bmu_iahbl_base   (12'h000             ),    // TODO - 手册上写应该 9'b0!!
+  .pad_bmu_iahbl_mask   (12'he00             ),    // TODO - 512MB
   .pad_clic_int_vld     (pad_clic_int_vld    ),
   .pad_cpu_dfs_req      (1'b0                ),
   .pad_cpu_ext_int_b    (pad_cpu_ext_int_b   ),
