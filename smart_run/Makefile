@@ -122,6 +122,8 @@ endif
 ifeq ($(findstring $(CASE), $(CASE_LIST)), $(CASE))
 	@make -s compile
 	@make -s buildcase CASE=$(CASE)
+#	@make -s compile
+#	@make -s buildcase CASE=$(CASE)
 ifeq ($(SIM), vcs)
 	cd ./work && ./simv -l run.vcs.log
 else

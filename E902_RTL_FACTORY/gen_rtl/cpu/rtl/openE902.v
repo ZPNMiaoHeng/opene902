@@ -528,6 +528,7 @@ cr_core_top  x_cr_core_top (
 //  Instance HAD module 
 //==========================================================
 // &Instance("cr_had_top"); @275
+// TODO - had?????
 cr_had_top  x_cr_had_top (
   .clk_en                               (clk_en                              ),
   .cp0_had_cpuid_idx0                   (cp0_had_cpuid_idx0                  ),

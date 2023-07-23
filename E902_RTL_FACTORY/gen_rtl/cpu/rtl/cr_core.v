@@ -226,6 +226,7 @@ input           sysio_iu_wk_event;
 input           sysmap_ifu_acc_ca;                    
 input           sysmap_lsu_acc_ca;                    
 input   [31:0]  tcip_cp0_clic_base;                   
+
 output          cp0_cache_lpmd_req;                   
 output          cp0_cache_srst_req;                   
 output  [31:0]  cp0_had_cpuid_idx0;                   
@@ -246,9 +247,11 @@ output  [1 :0]  cp0_sysio_srst;
 output          cp0_yy_be_v2;                         
 output          cp0_yy_clk_en;                        
 output          cp0_yy_machine_mode_aft_dbg;          
-output  [1 :0]  cp0_yy_priv_mode;                     
+output  [1 :0]  cp0_yy_priv_mode;                 
+
 output  [11:0]  cpu_clic_curid;                       
 output          cpu_clic_int_exit;                    
+
 output  [31:0]  ifu_bmu_addr;                         
 output          ifu_bmu_idle;                         
 output  [3 :0]  ifu_bmu_prot;                         
@@ -259,6 +262,7 @@ output          ifu_had_fetch_expt_vld;
 output          ifu_had_inst_dbg_disable;             
 output  [31:0]  ifu_had_match_pc;                     
 output          ifu_had_split_first;                  
+
 output          iu_bmu_vec_redirect;                  
 output          iu_cache_lockup_req;                  
 output          iu_had_adr_dbg_ack;                   
@@ -291,7 +295,8 @@ output          iu_pad_inst_split;
 output  [31:0]  iu_pad_retire_pc;                     
 output          iu_sys_lp_wk_int;                     
 output          iu_sysio_lockup_on;                   
-output          iu_yy_xx_dbgon;                       
+output          iu_yy_xx_dbgon;                   
+    
 output  [31:0]  lsu_bmu_addr;                         
 output          lsu_bmu_addr_check_fail;              
 output          lsu_bmu_idle;                         

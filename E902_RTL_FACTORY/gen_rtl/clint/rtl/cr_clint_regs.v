@@ -139,6 +139,8 @@ assign mtime_lo_value[31:0] = sysio_clint_mtime[31:0];
 assign mtime_hi_value[31:0] = sysio_clint_mtime[63:32];
 
 
+// TODO - ADD mtime reg
+
 //==========================================================
 //                   CLINT Output Signal
 //==========================================================
