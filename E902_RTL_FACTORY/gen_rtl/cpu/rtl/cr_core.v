@@ -226,7 +226,7 @@ input           sysio_iu_wk_event;
 input           sysmap_ifu_acc_ca;                    
 input           sysmap_lsu_acc_ca;                    
 input   [31:0]  tcip_cp0_clic_base;                   
-
+// CSR
 output          cp0_cache_lpmd_req;                   
 output          cp0_cache_srst_req;                   
 output  [31:0]  cp0_had_cpuid_idx0;                   
@@ -296,7 +296,7 @@ output  [31:0]  iu_pad_retire_pc;
 output          iu_sys_lp_wk_int;                     
 output          iu_sysio_lockup_on;                   
 output          iu_yy_xx_dbgon;                   
-    
+
 output  [31:0]  lsu_bmu_addr;                         
 output          lsu_bmu_addr_check_fail;              
 output          lsu_bmu_idle;                         
